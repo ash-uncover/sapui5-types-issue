@@ -7,9 +7,6 @@
         "moduleResolution": "node",
         "outDir": "dist/",
         "paths": {
-            "sap/bi/smart/core/*": [
-                "../node_modules/sbi-flapjack/types/sap/bi/smart/core/*"
-            ],
             "ui5/typescript/helloworld/*": [
                 "webapp/*"
             ]
@@ -19,6 +16,10 @@
         "strict": true,
         "strictPropertyInitialization": false,
         "target": "es2022",
+        "typeRoots": [
+            "./node_modules/@sapui5/types",
+            "./node_modules/@types",
+        ],
     },
     "include": [
         "./webapp/**/*"
